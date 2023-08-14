@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var IncidentManager_1 = require("./IncidentManager");
+var IncidentStatus_1 = require("./IncidentStatus");
+var manager = new IncidentManager_1.IncidentManager();
+manager.addIncident('Bug #1', IncidentStatus_1.IncidentStatus.InDev);
+manager.addIncident('Bug #2', IncidentStatus_1.IncidentStatus.Completed);
+manager.viewAllIncidents();
+manager.viewIncidentsByStatus(IncidentStatus_1.IncidentStatus.InDev);
+manager.removeIncident(1);
+manager.viewAllIncidents();
