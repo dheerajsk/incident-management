@@ -25,5 +25,4 @@ describe('IncidentManager', function () {
         expect(inDevIncidents).toContain(incident1);
         expect(inDevIncidents).not.toContain(incident2);
     });
-    // Add more tests as needed
 });
